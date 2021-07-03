@@ -1,0 +1,99 @@
+.navbar
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    background-color: #ffffff
+    border: none
+    border-bottom: 1px solid rgba(#510bba, 0.1)
+    z-index: 1000
+    &-wrap
+        display: flex
+        justify-content: space-between
+        align-items: center 
+        min-height: 80px 
+    &__mobile, &__sites
+        text-align: right
+    &__phone
+        display: block
+        margin-bottom: 5px
+        font-size: 18px
+        text-decoration: none
+        font-weight: bold
+        color: black 
+    &__first-site, &__second-site
+        display: inline-block
+        margin-bottom: 5px
+        font-size: 18px
+        text-decoration: none
+        font-weight: bold
+        color: black 
+    &__phone-info, &__sites-info
+        display: block
+        font-size: 14px
+        color: #6b6b6b
+    
+.menu
+    display: block
+    position: fixed
+    z-index: 0
+    top: 80px
+    left: 0
+    width: 100%
+    padding: 16px 0 
+    background-color: #507fe1
+    transition: 0.2s
+    transform: translateY(-100%)
+    opasity: 0
+    z-index: 100
+    transition: 0.5s
+    &_active
+        display: block
+        position: fixed
+        transform: translateY(0)
+        opasity: 1
+        transition: 0.5s
+    &__nav
+        display: flex
+        align-items: center
+        justify-content: space-around
+        
+    &__link
+        text-decoration: none
+        font-size: 17px
+        text-transform: uppercase
+        color: #ffffff
+    &-button
+        display: flex 
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        background-color: #ffffff
+        border: none
+        border-right: 1px solid rgba(#510bba, 0.1)
+        border-left: 1px solid rgba(#510bba, 0.1)
+        height: 80px
+        width: 70px 
+        &:focus
+            outline: none
+        &:hover
+            cursor: pointer
+        &__line 
+            display: block 
+            width: 25px
+            height: 3px
+            background-color: #89a9eb 
+            margin: 3px 0
+.logo
+    &__text
+        display: block
+        font-size: 18px
+        text-transform: uppercase
+        font-weight: bold
+        text-decoration: none
+        color: black
+    &__description
+        margin-top: 5px
+        display: block
+        font-size: 14px
+        color: #6b6b6b

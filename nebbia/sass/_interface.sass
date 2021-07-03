@@ -1,0 +1,74 @@
+.section
+    padding: 100px 0
+    &-title
+        text-align: center
+        font-size: 30px
+        font-weight: bold
+        text-transform: uppercase
+    &__title
+        margin-bottom: 100px
+    
+.button-o
+    padding: 17px 22px
+    font-size: 12px
+    font-weight: bold
+    color: #507fe1
+    background-color: #ffffff
+    border: 2px solid #507fe1
+    text-transform: uppercase
+    cursor: pointer
+    transition: 0.3s
+.button-o:hover
+    transition: 0.3s
+    color: #ffffff
+    background-color: #507fe1
+
+.button 
+    position: relative
+    left: 50%
+    transform: translate(-50%, 0)
+    margin-top: 70px
+    margin-left: auto
+    padding: 20px 35px 
+    text-transform: uppercase
+    border: none
+    background-color: #2b54ac
+    color: #ffffff
+    cursor: pointer
+    transition: 0.3s
+    box-shadow: inset 0px -4px 0 0px #143b8d
+    border-radius: 5px
+
+.button:hover
+    background-color: #143b8d
+    color: #ffffff
+    border: none
+    transition: 0.3s
+.bg-secondary
+    background-color: #f1f1f1
+
+.input
+    height: 80px
+    border: 1px solid #dddddd
+    border-right: none
+    &:last-child
+        border-right: 1px solid #dddddd
+
+.checkbox
+    display: none
+    &:checked + label:before
+        background: url(../img/check.jpg) right top no-repeat
+    &:hover
+        cursor: pointer
+    &-label
+        display: flex
+        align-items: center
+        margin-right: 40px
+        &:hover
+            cursor: pointer
+        &::before
+            content: ''
+            margin-right: 20px
+            width: 30px
+            height: 30px
+            border: 1px solid #dddddd
