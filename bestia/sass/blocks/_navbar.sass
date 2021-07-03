@@ -1,0 +1,34 @@
+.navbar
+    font-weight: 600
+    font-size: 17px
+    background-color: #000
+    &-wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+        min-height: 80px
+        color: white
+.info__mobile
+    text-decoration: none
+    color: white
+.menu
+    &__link
+        position: relative
+        text-decoration: none
+        color: white
+        margin-left: 30px
+    &__link:after
+        position: absolute
+        bottom: -5px
+        left: 0
+        content: ''
+        width: 100%
+        height: 2px
+        background-color: #fff
+        opacity: 0
+        transition: 0.3s
+    &__link:hover:after
+        opacity: 1
+        transition: 0.3s
+    &__information
+        text-align: right
