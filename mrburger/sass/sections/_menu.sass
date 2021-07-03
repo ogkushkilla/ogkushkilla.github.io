@@ -1,0 +1,85 @@
+.main-menu
+
+.menu
+    &-cards
+        display: flex
+        justify-content: space-evenly
+        align-items: top
+        flex-wrap: wrap
+    &-card 
+        max-width: 340px
+        margin-bottom: 50px
+        margin-top: 60px
+    &-filter
+        display: flex
+        justify-content: center
+.card
+    &-title
+        font-size: 28px
+        font-weight: bold
+        margin-bottom: 11px
+    &-text
+        height: 88px
+        font-size: 18px
+        margin-bottom: 13px
+    &-choose
+        display: flex
+        margin-bottom: 19px
+    &-price
+        font-size: 24px
+        font-weight: bold
+        margin-right: 17px
+    &-button
+        padding: 12px 50px
+        font-size: 24px
+        font-weight: bold
+
+.choosen
+    &-type
+        padding: 12px 25px
+        background-color: #C4C4C4
+        color: #ffffff
+        text-decoration: none
+        font-size: 24px
+        font-weight: bold
+        transition: 0.3s
+        border: none
+        cursor: pointer
+        outline: none
+    &-type:nth-child(1)
+        border-top-left-radius: 50px
+        border-bottom-left-radius: 50px
+    &-type:nth-child(2)
+        border-top-right-radius: 50px
+        border-bottom-right-radius: 50px
+    &-type:hover
+        background-color: #B70E0E
+        transition: 0.3s
+.filter
+    &-nav
+        display: flex
+        justify-content: center
+    &-wrapper
+        list-style: none
+        display: flex
+        overflow: hidden
+        border-radius: 50px
+    &-button
+        display: inline-block
+        padding: 14px 70px
+        background-color: #C4C4C4
+        color: #ffffff
+        text-decoration: none
+        font-size: 24px
+        border: none
+        font-weight: bold
+        transition: 0.3s
+        cursor: pointer
+        outline: none
+    &-button:hover:not(.active)
+        background-color: #B70E0E
+        transition: 0.3s
+.filter-button.active
+    background-color: #000000
+.choosen-type.is-active
+    background-color: #000000

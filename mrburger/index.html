@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="yandex-verification" content="42afef493822093c" />
+    <meta name="description" content="У нас вы можете заказать вкуснейшие бургеры с доставкой на дом, а также собрать свой собственный бургер!">
+    <meta name="keywords" content="бургер, бургерная, собрать бургер, бургеры на заказ, заказать бургер, сборка бургера, собрать бургер самому">
+    <title>Mr. Burger - Бургеры на заказ с доставкой по Екатеринбургу</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="menu">
+            <div class="container">
+                <nav class="navbar">
+                    <div class="navbar-block">
+                        <div class="navbar-logo"><img class="logo" src="img/logo.png" alt="logo"></div>
+                        <div class="navbar-menu">
+                            <a href="about.html" class="navbar-link">О нас</a>
+                            <a href="#menu" class="navbar-link">Меню</a>
+                            <a href="#special" class="navbar-link">Акции</a>
+                            <a href="#contacts" class="navbar-link">Контакты</a>
+                            <a href="tel:+79999999999" class="navbar-phone">+7-(999)-999-99-99</a>
+                        </div>
+                        <!-- /.navbar-menu -->
+                    </div>
+                    <!-- /.navbar-block -->
+                </nav>
+                <!-- /.navbar -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.menu -->
+        <div class="hero">
+            <div class="hero-bg"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-suptitle">Выбери свой бургер</span>
+                    <h1 class="hero-title">Убийственно вкусные<br>бургеры в Екатеринбурге</h1>
+                    <a class="anchor" href="#menu"><button class="button hero-button">Хочу бургер</button></a>
+                </div>
+                <!-- /.hero-content -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.hero -->
+    </header>
+    <!-- /.header -->
+    <main class="main">
+        <a class="anchor" id="menu"></a>
+        <section class="section main-menu">
+            <div class="container">
+                <h2 class="section-title">Меню</h2>
+                    <nav class="filter-nav">
+                        <ul class="filter-wrapper">
+                            <li class="filter-item">
+                                <button class="filter-button active" data-filter="all">все</button>
+                            </li>
+                            <li class="filter-item">
+                                <button class="filter-button" data-filter="spice">острые</button>
+                            </li>
+                            <li class="filter-item">
+                                <button class="filter-button" data-filter="meat">мясные</button>
+                            </li>
+                            <li class="filter-item">
+                                <button class="filter-button" data-filter="vegan">веган</button>
+                            </li>
+                        </ul>
+                    </nav>
+                <!-- /.menu-filter -->
+                <div class="menu-cards">
+                    <div class="menu-card" data-category="meat">
+                        <img src="img/cards/1.png" class="card-image">
+                        <h3 class="card-title">Бургер классический</h3>
+                        <p class="card-text">Говяжья котлета, листья салата, помидоры, моцарелла, лук, огурцы маринованные, томатный соус</p>
+                        <div class="card-choose">
+                            <button class="choosen-type is-active">средний</button>
+                            <button class="choosen-type">большой</button>
+                        </div>
+                        <div class="card-value">
+                            <span class="card-price">199 ₽</span>
+                            <button class="button card-button" data-popup="popup">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="menu-card" data-category="meat">
+                        <img src="img/cards/2.png" class="card-image">
+                        <h3 class="card-title">Бургер Фирменный</h3>
+                        <p class="card-text">Говяжья котлета, листья салата, помидоры, моцарелла, огурцы маринованные, французский соус, картофельные чипсы</p>
+                        <div class="card-choose">
+                            <button class="choosen-type is-active">средний</button>
+                            <button class="choosen-type">большой</button>
+                        </div>
+                        <div class="card-value">
+                            <span class="card-price">279 ₽</span>
+                            <button class="button card-button" data-popup="popup">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="menu-card" data-category="meat">
+                        <img src="img/cards/3.png" class="card-image">
+                        <h3 class="card-title">Бургер “Ципленок”</h3>
+                        <p class="card-text">Куриное филе, листья салата, помидоры, бекон, огурцы маринованные, соус тар-тар</p>
+                        <div class="card-choose">
+                            <button class="choosen-type is-active">средний</button>
+                            <button class="choosen-type">большой</button>
+                        </div>
+                        <div class="card-value">
+                            <span class="card-price">259 ₽</span>
+                            <button class="button card-button" data-popup="popup">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="menu-card" data-category="spice">
+                        <img src="img/cards/4.png" class="card-image">
+                        <h3 class="card-title">Чили-бургер</h3>
+                        <p class="card-text">Говяжья котлета, листья салата, помидоры, сыр Дор-блю, огурцы свежие, чили соус, горчица, красный лук, бекон</p>
+                        <div class="card-choose">
+                            <button class="choosen-type is-active">средний</button>
+                            <button class="choosen-type">большой</button>
+                        </div>
+                        <div class="card-value">
+                            <span class="card-price">249 ₽</span>
+                            <button class="button card-button" data-popup="popup">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="menu-card" data-category="spice">
+                        <img src="img/cards/5.png" class="card-image">
+                        <h3 class="card-title">Бургер “Двойной удар”</h3>
+                        <p class="card-text">Двойная говяжья котлета, листья салата, помидоры, моцарелла, сыр чеддер огурцы свежие, бекон, красный лук, горчичный соус</p>
+                        <div class="card-choose">
+                            <button class="choosen-type is-active">средний</button>
+                            <button class="choosen-type">большой</button>
+                        </div>
+                        <div class="card-value">
+                            <span class="card-price">349 ₽</span>
+                            <button class="button card-button" data-popup="popup">Заказать</button>
+                        </div>
+                    </div>
+                    <div class="menu-card" data-category="vegan">
+                        <img src="img/cards/6.png" class="card-image">
+                        <h3 class="card-title">Веган-бургер</h3>
+                        <p class="card-text">Овощная котлета, листья салата, помидоры, сыр чеддер, огурцы свежие, французский соус, лук</p>
+                        <div class="card-choose">
+                            <button class="choosen-type is-active">средний</button>
+                            <button class="choosen-type">большой</button>
+                        </div>
+                        <div class="card-value">
+                            <span class="card-price">179 ₽</span>
+                            <button class="button card-button" data-popup="popup">Заказать</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.menu-cards -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section main-menu -->
+        <a class="anchor" id="about"></a>
+        <section class="section about">
+            <div class="container">
+                <h2 class="section-title">Давайте знакомиться</h2>
+                <div class="about-block">
+                    <div class="about-content">
+                        <p class="about-text">Наша бургерная открыла двери для посетителей в городе Екатеринбурге! Мы гордимся тем что нам удалось стать первыми в городе. Всё потому, что мы используем только качественные ингредиенты для наших бургеров. А наши опытные повара вкладывают в них частичку своей души, чтобы гости нашей бургерной выходили от нас не только сытыми, но и с хорошим настроением. Мы ждем Вас, приходите с семьей, друзьями и попробуйте наши бургеры!<br><br>Вы не могли не заметить, что мы специализируемся на острых бургерах. Да, мы любим чили перец и его полезные свойства. Но также мы рады предложить вам классические бургеры, вегетарианские и с морепродуктами. Мы гарантируем, что никто не уйдет от нас голодным!  </p>
+                    </div>
+                    <!-- /.about-content -->
+                    <div class="about-image">
+                        <img class="about-img" src="img/about-bg.jpg" alt="about-image">
+                    </div>
+                    <!-- /.about-image -->
+                </div>
+                <!-- /.about-block -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section about -->
+        <section class="section delivery">
+            <div class="container">
+                <div class="delivery-block">
+                    <div class="delivery-image">
+                        <img class="delivery-img" src="img/delivery.jpg" alt="delivery">
+                    </div>
+                    <!-- /.delivery-image -->
+                    <div class="delivery-content">
+                        <h2 class="delivery-title">Доставка осуществляется с 9:00 до 23:00</h2>
+                        <p class="delivery-subtitle">все заказы поступившие раньше или позже указанного времени - доставляются в эти часы</p>
+                        <a href="#menu"><button class="button delivery-button">Сделать заказ</button></a>
+                    </div>
+                    <!-- /.delivery-content -->
+                </div>
+                <!-- /.delivery-block -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section delivery -->
+        <section class="section features">
+            <div class="container">
+                <h2 class="section-title">Почему мы?</h2>
+                <div class="features-cards">
+                    <div class="features-card">
+                        <img class="features-card__image" src="img/features/1.jpg" alt="first-feature">
+                        <div class="card-content">
+                            <h3 class="features-card__title">100% свежее мясо</h3>
+                            <p class="features-card__subtitle">Мы закупаем мясо напрямую только у проверенных поставщиков</p>
+                            <a href="about.html" class="features-link"><button class="button features-card__button">Подробнее</button></a>
+                        </div>
+                    </div>
+                    <div class="features-card">
+                        <img class="features-card__image" src="img/features/2.jpg" alt="second-feature">
+                        <div class="card-content">
+                            <h3 class="features-card__title">Ручная сборка</h3>
+                            <p class="features-card__subtitle">Квалифицированный персонал готовит блюда быстро и качественно</p>
+                            <a href="about.html" class="features-link"><button class="button features-card__button">Подробнее</button></a>
+                        </div>
+                    </div>
+                    <div class="features-card">
+                        <img class="features-card__image" src="img/features/3.jpg" alt="third-feature">
+                        <div class="card-content">
+                            <h3 class="features-card__title">Натуральные ингредиенты</h3>
+                            <p class="features-card__subtitle">Только свежая натуральная зелень и овощи без искуственных добавок</p>
+                            <a href="about.html" class="features-link"><button class="button features-card__button">Подробнее</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.features-cards -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section features -->
+        <a class="anchor" id="special"></a>
+        <section class="section special">
+            <div class="container">
+                <h2 class="section-title">Акции в честь открытия</h2>
+                <div class="special-cards">
+                    <div class="special-card">
+                        <img class="special-card__image1" src="img/special/1.jpg" alt="first-special">
+                        <div class="special-card__content">
+                            <h3 class="special-card__title">Скидка 10% на всё меню до 14 октября</h3>
+                            <p class="special-card__text">В честь открытия нашей бургерной, первые две недели после открытия будет действовать особая акция, распростроняющаяся на всё меню, спешите попробовать и насладиться вкусной едой!</p>
+                            <a href="about.html" class="special-link"><button class="button features-card__button">Подробнее</button></a>
+                        </div>
+                    </div>
+                    <div class="special-card">
+                        <img class="special-card__image2" src="img/special/2.jpg" alt="second-special">
+                        <div class="special-card__content">
+                            <h3 class="special-card__title">Скидка 30% во время праздников</h3>
+                            <p class="special-card__text">Праздники – время, которое хочется провести с близкими. Мы позаботились о том, чтобы ваш праздничный стол не отнял у вас много сил, и подготовили специальное предложение с блюдами на компанию, которые можно заказать накануне праздника со скидкой.</p>
+                            <a href="about.html" class="special-link"><button class="button features-card__button">Подробнее</button></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.special-cards -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section special -->
+        <a class="anchor" id="contacts"></a>
+        <section class="section contacts">
+            <div class="container">
+                <h2 class="section-title">Ждем вас в гости</h2>
+                <div class="contacts-block">
+                    <div class="contacts-content">
+                        <address class="contacts-address">Адрес: г. Екатеринбург ул. 8 марта, дом 46 (ТРЦ Гринвич)</address>
+                        <a href="mailto:inbox@yandex.ru" class="contacts-email">E-mail: inbox@yandex.ru</a>
+                        <a href="tel:+79999999999" class="contacts-email">Телефон: +7 (999) 999-99-99</a>
+                        <p class="contacts-hours">Часы работы:<br>пн-пт: 9:00-23:00<br>сб-вс: 11:00-22:00</p>
+                        <div class="contacts-socials">
+                            <a href="#" class="social-link"><img src="img/socials/1.png" alt="vk"></a>
+                            <a href="#" class="social-link"><img src="img/socials/2.png" alt="instagram"></a>
+                        </div>
+                    </div>
+                    <!-- /.contacts-content -->
+                    <div class="contacts-map">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A969da39d79661a31191a428495476a41e2d0e5982b38df6d52cc1c23c8a983d1&amp;width=600&amp;height=425&amp;lang=ru_RU&amp;scroll=false"></script>
+                    </div>
+                    <!-- /.contacts-map -->
+                </div>
+                <!-- /.contacts-block -->
+                <div class="contacts-form">
+                    <h3 class="form-title">Будьте в курсе всех новинок</h3>
+                    <p class="form-subtitle">Оставьте нам свой e-mail чтобы быть в курсе всех новостей</p>
+                    <form action="#" class="form">
+                        <input class="form-email" type="email" name="email" id="email" placeholder="Ваш e-mail:">
+                        <input class="form-button" type="submit" value="&RightArrow;">
+                    </form>
+                </div>
+                <!-- /.contacts-form -->
+            </div>
+            <!-- /.container -->
+        </section>
+        <!-- /.section contacts -->
+    </main>
+    <!-- /.main -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-block">
+                <div class="footer-main">
+                    <h2 class="footer-title">Mr.Burger</h2>
+                    <p class="footer-subtitle">Убиственно вкусные бургеры в Екатеринбурге</p>
+                    <span class="footer-copyright">© Mr.Burger</span>
+                </div>
+                <!-- /.footer-main -->
+                <div class="footer-info">
+                    <a href="tel:+79999999999" class="footer-email">Телефон: +7 (999) 999-99-99</a>
+                    <a href="mailto:inbox@yandex.ru" class="footer-email">E-mail: inbox@yandex.ru</a>
+                    <span class="footer-date">Все права защищены, 2020г.</span>
+                </div>
+                <!-- /.footer-info -->
+            </div>
+            <!-- /.footer-block -->
+        </div>
+        <!-- /.container -->
+    </footer>
+    <!-- /.section footer -->
+    <div class="popup">
+        <div class="popup-block">
+            <div class="popup-header">
+                <h1 class="popup-title">Заполните форму</h1>
+                <span class="close">&times;</span>
+                <img class="popup-image" src="img/cards/1.png" alt="order">
+                <h2 class="order-title order-product-title">Бургер классический</h2>
+                <span class="order-price order-product-price" id="sum-price">199</span>
+                <span class="order-type">средний</span>
+            </div>
+            <!-- /.popup-header -->
+            <div class="popup-body">
+                <form action="#" class="form order-form">
+                    <input class="order-info-title" type="hidden" name="бургер">
+                    <input class="order-info-price" type="hidden" name="цена">
+                    <input class="order-info-size" type="hidden" name="размер">
+                    <input class="input order-name" type="text" name="name" id="name" placeholder="Ваше имя">
+                    <input class="input order-phone" type="tel" name="phone" id="phone" placeholder="Ваш телефон">
+                    <input class="input order-address" type="text" name="address" id="address" placeholder="Ваш адресс">
+                    <select name="pay" id="pay" class="input order-pay">
+                        <option disabled selected>Способ оплаты</option>
+                        <option value="cash">Наличными</option>
+                        <option value="bank">Банковской картой</option>
+                    </select>
+                    <textarea name="comment" id="comment" class="order-comment" placeholder="Комментарий к заказу"></textarea>
+                    <input class="order-button" type="submit" value="Отправить">
+                </form>
+                <!-- /.form order-form -->
+            </div>
+            <!-- /.popup-body -->
+        </div>
+        <!-- /.popup-block -->
+    </div>
+    <!-- /.popup -->
+    <script src="js/main.js"></script>
+    <script src="js/filter.js"></script>
+    <script src="js/myLib.js"></script>
+    <script src="js/product.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+.about
+    position: relative
+    &-block
+        display: flex
+        justify-content: space-around
+        align-items: center
+    &-content
+        position: relative
+        max-width: 515px
+        font-size: 20px
+    &-text::before
+        content: ''
+        position: absolute
+        top: -34px
+        left: 0
+        width: 20%
+        height: 3px
+        background-color: #B70E0E
+    &-text::after
+        content: ''
+        position: absolute
+        bottom: -34px
+        right: 0
+        width: 20%
+        height: 3px
+        background-color: #B70E0E
+    &-img
+        width: 100%
+        border-radius: 30px
