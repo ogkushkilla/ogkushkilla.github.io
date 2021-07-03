@@ -1,0 +1,167 @@
+.header
+    position: relative
+    display: flex
+    width: 100%
+    height: 100vh
+    &-video
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      object-fit: cover
+      z-index: -2
+    &-overlay
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100vh
+      background: linear-gradient(to left, #000, #000)
+      mix-blend-mode: overlay
+      opacity: 0.7
+      z-index: -1
+    &-content
+      width: 700px
+      margin: auto
+    &-title
+      font-size: 70px
+      text-align: center
+      text-transform: uppercase
+      padding-bottom: 50px
+      color: #ffffff
+    &-subtitle
+      padding-top: 30px
+      padding-bottom: 30px
+      text-align: center
+      text-transform: uppercase
+      font-size: 20px
+      color: #ffffff
+    &-button
+      display: block
+      margin: auto
+      width: 250px
+      padding: 14px 28px
+      background-color: transparent
+      border: 2px solid #ffffff
+      color: #ffffff
+      font-style: italic
+      transition: 0.3s
+    &-button:hover
+        background-color: #1E3348
+        color: #ffffff
+        transform: scale(1.1)
+        transition: 0.3s
+
+#menuToggle
+  display: block
+  position: fixed
+  top: 50px
+  right: 50px
+  z-index: 1
+  -webkit-user-select: none
+  user-select: none
+
+#menuToggle input
+  display: block
+  width: 40px
+  height: 32px
+  position: absolute
+  top: -7px
+  left: -5px
+  cursor: pointer
+  opacity: 0
+  z-index: 2
+  -webkit-touch-callout: none
+
+#menuToggle span
+  display: block
+  width: 33px
+  height: 4px
+  margin-bottom: 5px
+  position: relative
+  background: #ffffff
+  border-radius: 3px
+  z-index: 1
+  transform-origin: 4px 0px
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease
+
+#menuToggle span:first-child
+  transform-origin: 0% 0%
+
+#menuToggle span:nth-last-child(2)
+  transform-origin: 0% 100%
+
+#menuToggle input:checked ~ span 
+  opacity: 1
+  transform: rotate(45deg) translate(-2px, -1px)
+  background: #ffffff
+
+#menuToggle input:checked ~ span:nth-last-child(3)
+  opacity: 0
+  transform: rotate(0deg) scale(0.2, 0.2)
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+  opacity: 1
+  transform: rotate(-45deg) translate(0, -1px)
+
+#menu
+  position: absolute
+  width: 400px
+  height: 120vh
+  display: flex
+  flex-flow: column
+  justify-content: center
+  margin: -170px 0 0 0
+  padding: 50px
+  right: -100px
+  background: #111111
+  list-style-type: none
+  -webkit-font-smoothing: antialiased
+  transform-origin: 0% 0%
+  transform: translate(100%, 0)
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0)
+
+#menuToggle input:checked ~ ul 
+  transform: scale(1.0, 1.0)
+  opacity: 1
+
+.menu-link
+    text-align: center
+    color: rgba(255, 255, 255, 0.5)
+    transition: 0.3s
+    padding: 10px 0
+    font-size: 22px
+
+.menu-link:hover
+    color: #ffffff
+    transition: 0.3s
+
+.download-game
+  border: none
+  background: transparent
+  padding: 0 24px
+  font-size: 16px
+  line-height: 52px
+  position: relative
+  color: #ffffff
+  cursor: pointer
+  letter-spacing: 0.5px
+.download-game:before
+	content: ''
+	position: absolute
+	left: 0
+	top: 0
+	width: 100%
+	height: 48px
+	background: transparent
+	border: 2px solid #1E3348
+	z-index: -1
+	border-radius: 50px
+	transition: 0.3s ease-in-out
+.download-game:hover
+	color: #fff
+.download-game:hover:before
+	background: #1E3348
+	box-shadow: 0 10px 90px -2px rgba(#000,0.2)

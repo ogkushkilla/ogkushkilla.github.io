@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/1.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css\animate.min.css">
+  <link rel="stylesheet" href="css\animate.css">
+  <title>Future Cafe - космический ресторан будущего</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class='navigation'>
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a class="menu-link" href="index.html">Главная</a>
+          <a class="menu-link" href="game.html">О игре</a>
+          <a class="menu-link" href="#promo">Скачать</a>
+          <a class="menu-link" href="policy.html">Политика конфиденциальности</a>
+        </ul>
+      </div>
+    </nav>
+    <video class="header-video" src="img/video.mp4" muted loop autoplay></video>
+    <div class="header-overlay"></div>
+    <div class="header-content wow fadeIn" data-wow-delay="1s">
+      <h1 class="header-title">Future Cafe</h1>
+      <a href="#promo"><button class="header-button button">Играйте бесплатно</button></a>
+      <p class="header-subtitle">Играйте бесплатно на мобильном устройстве Android</p>
+      <div class="promo-link">
+        <a href="https://dropmefiles.com/tvxuc" class="download-link">
+          <button class="download-game">Скачать APK</button>
+        </a>
+      </div>
+    </div>
+    <!-- /.header-content -->
+  </header>
+  <!-- /.header -->
+  <main class="main">
+    <section class="section about">
+      <div class="container">
+        <div class="about-bg"></div>
+        <!-- /.about-bg -->
+        <div class="about-content">
+          <h2 class="about-title wow fadeIn" data-wow-delay="0.5s">Добро пожаловать в<br>ресторан будущего!</h2>
+          <p class="about-subtitle wow fadeIn" data-wow-delay="1s">Future Cafe - это игра, в которой вы можете стать
+            владельцем космического ресторана! Один пришелец загорелся желанием открыть свой ресторан, с целью накормить
+            всех существ во вселенной самой вкусной едой. Скорей помогите ему это сделать!</p>
+          <a href="#promo"><button class="about-button button wow fadeIn" data-wow-delay="1.5s">Открыть свой
+              ресторан</button></a>
+        </div>
+        <!-- /.about-content -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section about -->
+    <section class="section special">
+      <div class="container">
+        <div class="special-wrap">
+          <div class="special-content">
+            <h2 class="special-title wow fadeInLeft" data-wow-delay="0.5s">Начните покорять космос уже сейчас!</h2>
+            <p class="special-subtitle wow fadeInLeft" data-wow-delay="1s">Стройте, развивайте и улучшайте свой ресторан
+              будущего, чтобы стать самым известным во вселенной! Облетите каждый уголок космоса, дайте о себе знать
+              каждому живому существу</p>
+            <a href="#promo"><button class="special-button button wow fadeInLeft" data-wow-delay="1.5s">Играть
+                бесплатно</button></a>
+          </div>
+          <!-- /.special-content -->
+          <div class="special-bg">
+            <img class="special-image2" src="img/screens/1.jpg" alt="game-screenshot">
+            <img class="special-image" src="img/phone.png" width="250px"
+              alt="game-screenshot">
+          </div>
+          <!-- /.special-bg -->
+        </div>
+        <!-- /.special-wrap -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section special -->
+    <section class="section info">
+      <div class="container">
+        <div class="info-wrap">
+          <div class="info-bg">
+            <img class="info-image2" src="img/screens/2.jpg" alt="game-screenshot">
+            <img class="info-image" src="img/phone.png" width="250px"
+              alt="game-screenshot">
+          </div>
+          <!-- /.info-bg -->
+          <div class="info-content">
+            <h2 class="info-title wow fadeInRight" data-wow-delay="0.5s">Развивайтесь с друзьями!</h2>
+            <p class="info-subtitle wow fadeInRight" data-wow-delay="1s">Соревнуйтесь с друзьями за титул лучшего
+              ресторана вселенной, повышая известность и статус своего ресторана.</p>
+            <a href="#promo"><button class="info-button button wow fadeInRight" data-wow-delay="1.5s">Играть
+                бесплатно</button></a>
+          </div>
+          <!-- /.info-content -->
+        </div>
+        <!-- /.info-wrap -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section info -->
+    <section class="section form">
+      <div class="container">
+        <h2 class="form-title wow fadeIn" data-wow-delay="0.5s">Будьте первыми!</h2>
+        <p class="form-subtitle wow fadeIn" data-wow-delay="1s">Оставьте нам свою почту и мы отправим вам ссылку на
+          скачивание игры, по которой вы сможете получить внутриигровые бонусы!</p>
+        <form action="mail.php" class="form-content wow fadeIn" data-wow-delay="1.5s" id="form" method="POST">
+          <input class="form-input form-email" type="email" name="user_email" placeholder="Ваш email" required>
+          <input class="form-input form-button" type="submit" value="ОТПРАВИТЬ">
+          <div class="status"></div>
+        </form>
+        <!-- /.form -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.section form -->
+    <section class="section promo" id="promo">
+      <div class="promo-content">
+        <h2 class="section-title promo-title">Скачать APK файл игры</h2>
+        <div class="promo-link">
+          <a href="https://dropmefiles.com/tvxuc" class="download-link">
+            <button class="download-game">Скачать APK</button>
+          </a>
+        </div>
+        <img class="promo-image" src="img/1.png" alt="astronaut" width="300px">
+        <img class="promo-image2" src="img/1.png" alt="astronaut" width="300px">
+      </div>
+      <!-- /.promo-content -->
+    </section>
+  </main>
+  <!-- /.main -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-block">
+        <div class="footer-main">
+          <h2 class="footer-title">Future Cafe</h2>
+          <p class="footer-subtitle">Играйте бесплатно на мобильном устройстве Android</p>
+          <span class="footer-copyright">© Future Cafe</span>
+        </div>
+        <!-- /.footer-main -->
+        <div class="footer-info">
+          <a href="mailto:futurecafe@mail.ru" class="footer-email">E-mail: futurecafe@gmail.com</a>
+          <span class="footer-date">Все права защищены, 2021г.</span>
+        </div>
+        <!-- /.footer-info -->
+      </div>
+      <!-- /.footer-block -->
+    </div>
+    <!-- /.container -->
+  </footer>
+  <!-- /.footer -->
+  <script src="js/wow.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+ol
+    list-style: none
+    counter-reset: li
+    font-size: 20px
+    font-weight: normal
+    padding-left: 40px
+
+li:before
+    counter-increment: li
+    content: counters(li, ".") ". "
+
+.policy
+    background-color: #1E3348
+    color: #AFC7DF
+    &-title
+        font-size: 32px
+        font-weight: bold
+        padding-bottom: 40px
+    &-list
+        padding-top: 10px
+        &-title
+            font-size: 26px
+            font-weight: bold
+            padding-bottom: 20px
+    &-text
+        font-size: 20px
+        font-weight: normal
+        padding-top: 10px
