@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.square-block {
+    
+    height: 100%;
+}
+
+.squares {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.squares-item {
+    width: 125px;
+    height: 125px;
+    background-color: #000;
+}
+
+
+
+.left-top {
+    animation-name: square-top-left;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.left-bottom {
+    animation-name: square-bottom-left;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.right-top {
+    animation-name: square-top-right;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.right-bottom {
+    animation-name: square-bottom-right;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes square-top-left {
+    0% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-800%, -400%);
+        opacity: 0;
+    }
+}
+
+@keyframes square-bottom-left {
+    0% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(800%, -400%);
+        opacity: 0;
+    }
+}
+
+@keyframes square-top-right {
+    0% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-800%, 400%);
+        opacity: 0;
+    }
+}
+
+@keyframes square-bottom-right {
+    0% {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(800%, 400%);
+        opacity: 0;
+    }
+}
+
+.circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(61, 90, 128);
+    border-radius: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    animation-name: circle-animation;
+    animation-duration: 1s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes circle-animation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        cursor: pointer;
+    }
+}
+
+.circle-text {
+    text-align: center;
+    font-size: 42px;
+    padding: 170px 0;
+    color: #ffffff;
+    transform: rotate(180deg);
+    animation-name: circle-text-animation;
+    animation-duration: 2s;
+    animation-delay: 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes circle-text-animation {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.form-block {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 700px;
+    height: 400px;
+    background-color: #d8d8d8;
+    border: 4px solid rgb(73, 108, 155);
+    margin-top: -200px;
+    margin-left: -350px;
+    border-radius: 20px;
+}
+
+.form {
+    /* position: absolute;
+    top: 35%;
+    left: 50%;
+    width: 500px;
+    margin-left: -250px; */
+    position: relative;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form select {
+    padding: 10px;
+}
+
+.form select:not(:last-child) {
+    margin-right: 10px;
+}
+
+.select {
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid rgb(61, 90, 128);
+}
+
+.date-input {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    margin-left: -100px;
+    border: 1px solid rgb(61, 90, 128);
+}
+
+.button {
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.delivery-button {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    margin-left: -75px;
+    border: 1px solid rgb(61, 90, 128);
+}
+
+.overflow {
+    display: block;
+}
+
+.result {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+}
+
+#result-mark, #result-model, #result-date, #result-year {
+    padding-right: 5px;
+}
+
+.result-button {
+    position: absolute;
+    top: 60%;
+    background-color: rgb(61, 90, 128);
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.result-button:hover {
+    background-color: #ffffff;
+    color: rgb(61, 90, 128);
+    border: 1px solid rgb(61, 90, 128);
+    transition: 0.3s;
+}
