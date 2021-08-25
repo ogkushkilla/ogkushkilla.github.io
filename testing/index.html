@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Тестовое задание</title>
+</head>
+<body>
+    <main id="main" class="main">
+        <div class="main-block">
+            <div class="square-block">
+                <div class="squares">
+                    <div class="squares-top">
+                        <div class="squares-item left-top"></div>
+                        <div class="squares-item right-top"></div>
+                    </div>
+                    <div class="squares-bottom">
+                        <div class="squares-item left-bottom"></div>
+                        <div class="squares-item right-bottom"></div>
+                    </div>
+                </div>
+                <!-- /.squares -->
+            </div>
+            <!-- /.square-block -->
+            <div class="circle-block">
+                <div class="circle">
+                    <p class="circle-text">Нажмите</p>
+                </div>
+                <!-- /.circle -->
+            </div>
+            <!-- /.circle-block -->
+            <div class="form-block">
+                <form action="#" class="form">
+                    <select name="autoMark" id="mark" class="select auto-mark" onchange="document.getElementById('result-mark').innerHTML = 'Вы выбрали авто марки ' + this.options[this.selectedIndex].value + ',';">
+                        <option value="markChoose" label="Выберите марку машины"></option>
+                    </select>
+                    <select name="autoModel" id="model" class="select auto-model" style="display: none;" onchange="textOption(this); document.getElementById('result-model').innerHTML = ' модели ' + this.options[this.selectedIndex].value + ',';">
+                        <option value="modelChoose" label="Выберите модель"></option>
+                    </select>
+                    <select name="autoYear" id="year" class="select auto-year" style="display: none;" onchange="textOption(this); document.getElementById('result-year').innerHTML = this.options[this.selectedIndex].value + ' года выпуска, ';">
+                        <option value="yearChoose" label="Выберите год выпуска"></option>
+                    </select>
+                </form>
+                <input class="date-input" type="date" name="delivery-date" id="delivery-date" onchange="document.getElementById('result-date').innerHTML = ' доставка ' + this.value;">
+                <button class="button delivery-button" style="display: none;">Доставить</button>
+            </div>
+            <!-- /.form-block -->
+            <div class="result" style="display: none;">
+                <div id="result-mark"></div>
+                <div id="result-model"></div>
+                <div id="result-year"></div>
+                <div id="result-date"></div>
+                <button class="button result-button" onclick="setNewContent()">Начать заново</button>
+            </div>
+        </div>
+        <!-- /.main-block -->
+    </main>
+    <!-- /.main -->
+    <script src="js/index.js"></script>
+</body>
+</html>
