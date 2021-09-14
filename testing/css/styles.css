@@ -47,11 +47,12 @@ body {
 
 .hero-title {
     position: absolute;
-    height: 250px;
+    /* width: 100%; */
     font-family: 'PingFang';
     font-size: 255px;
     line-height: 250px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .hero-title__piece {
@@ -276,4 +277,118 @@ body {
     background-color: #000;
     color: #fff;
     border: none;
+}
+
+.hero-mobile__head {
+    display: none;
+}
+
+/* Response */
+@media (max-width: 1440px) {
+    .hero {
+        height: 680px;
+    }
+    .hero-title {
+        font-size: 230px;
+        line-height: 225px;
+    }
+    .hero-main {
+        top: 63px;
+        left: -21px;
+        height: 600px;
+    }
+    .image-block__mask {
+        width: 350px;
+    }
+    .mode-block {
+        margin-right: 900px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .hero-title {
+        font-size: 180px;
+        line-height: 165px;
+    }
+    .hero-main {
+        top: 30px;
+        left: 0;
+    }
+    .image-block {
+        margin-left: 115px;
+    }
+    .auction-block {
+        margin-right: 55px;
+    }
+    .mode-block {
+        margin-right: 588px;
+    }
+}
+
+@media (max-width: 426px) {
+    .hero {
+        height: 994px;
+    }
+    .hero-title {
+        display: none;
+    }
+    .hero-mobile__head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .hero-mobile__title {
+        font-family: 'Digitany';
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    .mobile-add {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        border-radius: 50%;
+        border: none;
+        background-color: #000;
+        color: #fff;
+    }
+    .hero-main {
+        top: 0;
+        left: 0;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .masks-block {
+        display: flex;
+        align-items: center;
+        margin-left: 0;
+        margin-bottom: 12px;
+        order: 2;
+    }
+    .masks-block__item:not(:nth-child(4)) {
+        height: unset;
+        margin-right: 12px;
+        margin-bottom: 0;
+    }
+    .image-block {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 15px;
+        order: 1;
+    }
+    .image-block__mask {
+        width: 325px;
+    }
+    .auction-block {
+        margin-right: 0;
+        order: 3;
+    }
+    .mode-block {
+        margin-right: 0;
+    }
+    .hero-footer {
+        display: none;
+    }
 }
