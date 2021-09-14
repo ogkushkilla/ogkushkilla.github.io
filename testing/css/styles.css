@@ -7,8 +7,7 @@
 
 body {
     position: relative;
-    width: 1440px;
-    height: 905px;
+    padding: 5px;
     background-color: #000;
 }
 
@@ -38,16 +37,16 @@ body {
 }
 /* Hero */
 .hero {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    width: 1430px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
     height: 895px;
     background-color: #D2FD7E;
     border-radius: 24px;
 }
 
 .hero-title {
+    position: absolute;
     height: 250px;
     font-family: 'PingFang';
     font-size: 255px;
@@ -60,9 +59,9 @@ body {
 }
 
 .hero-main {
-    position: absolute;
-    top: 100px;
-    left: 0;
+    position: relative;
+    top: 35px;
+    left: 10px;
     display: flex;
     align-items: center;
     margin-bottom: 15px;
@@ -229,8 +228,8 @@ body {
 .hero-footer {
     position: absolute;
     bottom: 10px;
-    left: 10px;
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
