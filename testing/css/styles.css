@@ -209,7 +209,7 @@
     }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 900px) {
     .container {
         max-width: unset;
         margin: unset;
