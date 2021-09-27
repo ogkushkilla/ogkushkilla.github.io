@@ -1,0 +1,252 @@
+/* MAIN STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* FONTS */
+
+@font-face {
+	font-family: 'GolosRegular';
+	src: url("../fonts/Golostextregular.ttf");
+}
+
+@font-face {
+	font-family: 'GolosMedium';
+	src: url("../fonts/Golostextmedium.ttf");
+}
+
+@font-face {
+	font-family: 'GolosBold';
+	src: url("../fonts/Golostextbold.ttf");
+}
+/* CARDS */
+
+.main {
+    width: 100%;
+    height: 100vh;
+    font-family: 'GolosRegular', sans-serif;
+    font-size: 14px;
+    background-color: #2E3039;
+}
+
+.container {
+    max-width: 1530px;
+    margin: 0 auto;
+}
+
+.white { color: #ffffff; }
+
+.card-items {
+    display: flex;
+    height: 100vh;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.card-type_1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 524px;
+    height: 476px;
+    background-color: #ffffff;
+}
+
+.item-image { padding-right: 20px; }
+
+.card-image {
+    width: 200px;
+    height: 150px;
+}
+
+.card-head { margin-bottom: 8px; }
+
+.card-date { line-height: 21px; }
+
+.card-tag {
+    padding: 4px 8px;
+    margin-left: 16px;
+    width: 100%;
+    border-radius: 80px;
+    color: #ffffff;
+    background-color: #2E3039;
+}
+
+.card-title {
+    margin-bottom: 12px;
+    font-family: 'GolosBold', sans-serif;
+    font-size: 24px;
+    line-height: 33.6px;
+}
+
+.card-text {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.button {
+    font-size: 16px;
+    border: 0;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.button-info {
+    padding-right: 19px;
+    color: #0059BF;
+}
+
+.button-info::after {
+    content: '❯';
+    top: 0;
+    right: 0;
+    padding-left: 8px;
+}
+
+.button-share {
+    padding-left: 14px;
+    color: rgba(83, 84, 102, 0.8);
+}
+
+.button-share::after {
+    content: url(../img/button-icon.svg);
+    padding-left: 10px;
+}
+
+.card-type_2 {
+    padding: 20px;
+    width: 362px;
+    height: 441px;
+    background-image: url(../img/card-image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right -120px top;
+}
+
+.card-tag-type_2 { background-color: #1D1E21; }
+
+.card-type_3 {
+    width: 500px;
+    height: 655px;
+    background-color: #ffffff;
+}
+
+.item-image-type_3 { padding: 0; }
+
+.card-image-type_3 {
+    width: 100%;
+    height: 100%;
+}
+
+.card-body-type_3 {
+    padding: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1441px) {
+    .container {
+        max-width: 1250px;
+    }
+    .card-type_1 {
+        width: 478px;
+        height: 436px;
+    }
+    .card-type_2 {
+        width: 302px;
+        height: 401px;
+    }
+    .card-type_3 {
+        width: 400px;
+        height: 575px;
+    }
+    .card-title {
+        font-size: 16px;
+        line-height: 26.6px;
+    }
+    .card-text {
+        font-size: 13px;
+    }
+    .button {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 1025px) {
+    .container {
+        max-width: 950px;
+    }
+    .card-type_1 {
+        width: 415px;
+        height: 406px;
+    }
+    .card-type_2 {
+        width: 200px;
+        height: 321px;
+    }
+    .card-type_3 {
+        width: 250px;
+        height: 535px;
+    }
+    .card-image {
+        width: 150px;
+        height: 100px;
+    }
+    .card-date, .card-tag {
+        font-size: 10px;
+    }
+    .card-image-type_3 {
+        width: 100%;
+        height: 100%;
+    }
+    .card-text {
+        font-size: 12px;
+    }
+    .button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 769px) {
+    .container {
+        max-width: unset;
+        margin: unset;
+        background-color: #2E3039;
+    }
+    .card-items {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        height: unset;
+    }
+    .card-type_1 {
+        margin-top: 20px;
+    }
+    .card-type_2 {
+        margin-top: 20px;
+    }
+    .card-type_3 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .card-body-type_3 {
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 426px) {
+    .card-type_1 {
+        width: 300px;
+    }
+    .card-type_2 {
+        background-position: unset;
+    }
+    .item-image {
+        display: none;
+    }
+    .item-image-type_3 {
+        display: block;
+    }
+}
