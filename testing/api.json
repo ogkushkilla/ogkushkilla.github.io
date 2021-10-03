@@ -17,7 +17,7 @@
       "lastName": "Rudia",
       "location": {"city": "Kharkov", "country": "Ukraine"},
       "biography": "the chosen one..."
-    },
+    }
   ],
   "error": null
 }
