@@ -3,21 +3,193 @@
     {
       "id": "1",
       "avatar": "https://infosmi.net/wp-content/uploads/2018/10/chelovek_pauk_shkola123.jpg",
-      "followed": false,
-      "firstName": "Vsevolod",
-      "lastName": "Kravchenko",
-      "location": {"city": "Ekaterinburg", "country": "Russia"},
+      "followed": true,
+      "firstName": "Всеволод",
+      "lastName": "Кравченко",
+      "location": {"city": "Екатеринбург", "country": "Россия"},
       "biography": "hello, bitch"
     },
     {
       "id": "2",
       "avatar": "https://images.hdqwalls.com/download/venom-4k-digital-arts-cc-1920x1200.jpg",
       "followed": true,
-      "firstName": "Eduard",
-      "lastName": "Rudia",
-      "location": {"city": "Kharkov", "country": "Ukraine"},
-      "biography": "the chosen one..."
+      "firstName": "Эдуард",
+      "lastName": "Босс",
+      "location": {"city": "Харьков", "country": "Украина"},
+      "biography": "Один из лучших..."
+    },
+    {
+      "id": "3",
+      "avatar": null,
+      "followed": false,
+      "firstName": "Антон",
+      "lastName": "Максимов",
+      "location": {"city": "Челябинск", "country": "Россия"},
+      "biography": "Максим Антонов"
+    },
+    {
+      "id": "4",
+      "avatar": null,
+      "followed": true,
+      "firstName": "Алёна",
+      "lastName": "Беляева",
+      "location": {"city": "Екатеринбург", "country": "Россия"},
+      "biography": "Я - лучший фотограф!"
+    },
+    {
+      "id": "5",
+      "avatar": null,
+      "followed": false,
+      "firstName": "Александр",
+      "lastName": "Жопа",
+      "location": {"city": "Минск", "country": "Беларусь"},
+      "biography": "Не смешно..."
+    },
+    {
+      "id": "6",
+      "avatar": null,
+      "followed": false,
+      "firstName": "Лёха",
+      "lastName": "Быдло",
+      "location": {"city": "Москва", "country": "Россия"},
+      "biography": "Ну чо, ёпта, пообщаемся?"
+    },
+    {
+      "id": "7",
+      "avatar": null,
+      "followed": false,
+      "firstName": "Санёк",
+      "lastName": "Шизик",
+      "location": {"city": "Санкт-Петербург", "country": "Россия"},
+      "biography": "Я слышу картины и вижу звуки"
+    },
+    {
+      "id": "8",
+      "avatar": null,
+      "followed": true,
+      "firstName": "Павел",
+      "lastName": "Дуров",
+      "location": {"city": "Санкт-Петербург", "country": "Россия"},
+      "biography": "Ваша соц. сеть - говно!"
+    },
+    {
+      "id": "9",
+      "avatar": null,
+      "followed": false,
+      "firstName": "Мишаня",
+      "lastName": "Постыляков",
+      "location": {"city": "Новоуральск", "country": "Россия"},
+      "biography": "Охота крепкое - моё любимое пиво"
+    },
+    {
+      "id": "10",
+      "avatar": null,
+      "followed": true,
+      "firstName": "Игорь",
+      "lastName": "Мастер",
+      "location": {"city": "Екатеринбург", "country": "Россия"},
+      "biography": "Мастер ведьмак"
+    },
+    {
+      "id": "11",
+      "avatar": null,
+      "followed": false,
+      "firstName": "Шамиль",
+      "lastName": "Пиструн",
+      "location": {"city": "Алматы", "country": "Казахстан"},
+      "biography": "Порхай как бабочка, жаль как пиструн!"
+    },
+    {
+      "id": "12",
+      "avatar": null,
+      "followed": false,
+      "firstName": "Евгений",
+      "lastName": "Гениев",
+      "location": {"city": "Москва", "country": "Россия"},
+      "biography": "Великий гений, отец гениальности"
+    },
+    {
+      "id": "13",
+      "avatar": null,
+      "followed": false,
+      "firstName": "Алекс",
+      "lastName": "Дюрекс",
+      "location": {"city": "Киев", "country": "Украина"},
+      "biography": "Зато не порвусь"
+    },
+    {
+      "id": "14",
+      "avatar": null,
+      "followed": false,
+      "firstName": "Олег",
+      "lastName": "Икмамбек",
+      "location": {"city": "Львов", "country": "Украина"},
+      "biography": "Ну здрасьте..."
+    },
+    {
+      "id": "15",
+      "avatar": null,
+      "followed": false,
+      "firstName": "Егор",
+      "lastName": "Анисимов",
+      "location": {"city": "Москва", "country": "Россия"},
+      "biography": "Я стою выше тебя!"
+    },
+    {
+      "id": "16",
+      "avatar": null,
+      "followed": false,
+      "firstName": "Вупсень",
+      "lastName": "Пупсень",
+      "location": {"city": "Пермь", "country": "Россия"},
+      "biography": "Ну это без комментариев..."
+    },
+    {
+      "id": "17",
+      "avatar": null,
+      "followed": true,
+      "firstName": "Питер",
+      "lastName": "Паркер",
+      "location": {"city": "Нью-Йорк", "country": "США"},
+      "biography": "Ваш дружелюбный сосед"
+    },
+    {
+      "id": "18",
+      "avatar": null,
+      "followed": true,
+      "firstName": "Лиза",
+      "lastName": "Прекрасная",
+      "location": {"city": "Харьков", "country": "Украина"},
+      "biography": "Моя любовь"
+    },
+    {
+      "id": "19",
+      "avatar": null,
+      "followed": false,
+      "firstName": "Виктория",
+      "lastName": "Есенина",
+      "location": {"city": "Екатеринбург", "country": "Россия"},
+      "biography": "В честь великого поэта"
+    },
+    {
+      "id": "20",
+      "avatar": null,
+      "followed": false,
+      "firstName": "Мария",
+      "lastName": "Ермакова",
+      "location": {"city": "Москва", "country": "Россия"},
+      "biography": "Это реалистично?"
+    },
+    {
+      "id": "21",
+      "avatar": null,
+      "followed": false,
+      "firstName": "Арина",
+      "lastName": "Рутина",
+      "location": {"city": "Харьков", "country": "Украина"},
+      "biography": "Записывайтесь на ноготочки!"
     }
   ],
+  "totalCount": 21,
   "error": null
 }
