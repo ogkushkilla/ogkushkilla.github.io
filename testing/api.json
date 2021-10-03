@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "id": "1",
+      "avatar": "https://infosmi.net/wp-content/uploads/2018/10/chelovek_pauk_shkola123.jpg",
+      "followed": false,
+      "firstName": "Vsevolod",
+      "lastName": "Kravchenko",
+      "location": {"city": "Ekaterinburg", "country": "Russia"},
+      "biography": "hello, bitch"
+    },
+    {
+      "id": "2",
+      "avatar": "https://images.hdqwalls.com/download/venom-4k-digital-arts-cc-1920x1200.jpg",
+      "followed": true,
+      "firstName": "Eduard",
+      "lastName": "Rudia",
+      "location": {"city": "Kharkov", "country": "Ukraine"},
+      "biography": "the chosen one..."
+    },
+  ]
+}
