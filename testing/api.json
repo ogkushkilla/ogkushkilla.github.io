@@ -18,5 +18,6 @@
       "location": {"city": "Kharkov", "country": "Ukraine"},
       "biography": "the chosen one..."
     },
-  ]
+  ],
+  "error": null
 }
