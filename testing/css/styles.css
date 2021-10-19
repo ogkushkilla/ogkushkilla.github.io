@@ -520,6 +520,9 @@ body {
     .about-text {
         min-width: unset;
     }
+    .courses-slider__title::before {
+        top: 207%;
+    }
 }
 
 @media (max-width: 1360px) {
