@@ -511,6 +511,9 @@ body {
     .container {
         padding: 0 100px;
     }
+    .about-text {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 1439px) {
