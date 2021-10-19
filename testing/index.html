@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <script src="js/slider/swiper-bundle.min.js"></script>
+    <title>Тестовое</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img class="header-logo" src="images/logo.png" alt="logo">
+            <div class="header-block">
+                <nav class="navbar">
+                    <ul class="navbar-items">
+                        <li class="navbar-item">Программы</li>
+                        <li class="navbar-item">Курсы</li>
+                        <li class="navbar-item">О платформе</li>
+                    </ul>
+                </nav>
+                <button class="button header-button">Оставить заявку</button>
+            </div>
+        </div>
+    </header>
+    <!-- /.header -->
+    <main class="main">
+        <section class="section about">
+            <div class="container">
+                <div class="about-block">
+                    <div class="about-info">
+                        <h2 class="section-title about-title">Тестовое задание 66 бит</h2>
+                        <p class="about-text">66 Бит - профессиональный разработчик программного обеспечения, специализирующийся на создании веб-сайтов, информационных систем и мобильных приложений, ориентированных на российский и зарубежный рынок. 
+                            <br><br>Нашими клиентами являются иностранные стартапы, крупные государственные заказчики, а также частный бизнес. Каждый наш проект уникален и содержит в себе много интересных задач. Скучно не будет.
+                        </p>
+                    </div>
+                    <div class="about-items">
+                        <div class="about-item">
+                            <img class="about-item__image" src="images/about/1.png" alt="item-image">
+                            <span class="about-item__text">Дружный коллектив</span>
+                        </div>
+                        <div class="about-item">
+                            <img class="about-item__image" src="images/about/2.png" alt="item-image">
+                            <span class="about-item__text">Карьерный рост</span>
+                        </div>
+                        <div class="about-item">
+                            <img class="about-item__image" src="images/about/3.png" alt="item-image">
+                            <span class="about-item__text">Интересные задачи</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.section about -->
+        <section class="section offers">
+            <div class="container">
+                <div class="offers-block">
+                    <h2 class="section-title offers-title">Горячие предложения</h2>
+                    <div class="offers-slider">
+                        <!-- Slider main container -->
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="slider-item">
+                                    <div class="slider-content">
+                                        <div class="slider-info">
+                                            <h3 class="slider-info__title">Продюсирование музыки</h3>
+                                            <p class="slider-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit vitae vulputate cursus molestie donec non amet. Velit id massa pretium enim, nunc.</p>
+                                            <div class="slider-info__offer">
+                                                <h4 class="slider-info__offer--title">Специальное предложение:</h4>
+                                                <span class="slider-info__offer--price">24000 руб в месяц</span>
+                                            </div>
+                                        </div>
+                                        <img src="images/offers/1.png" alt="slider-image" class="slider-image">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="slider-item second-slide">
+                                    <div class="slider-content">
+                                        <div class="slider-info">
+                                            <h3 class="slider-info__title">Кройка и шитьё</h3>
+                                            <p class="slider-info__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit vitae vulputate cursus molestie donec non amet. Velit id massa pretium enim, nunc.</p>
+                                            <div class="slider-info__offer">
+                                                <h4 class="slider-info__offer--title">Специальное предложение:</h4>
+                                                <span class="slider-info__offer--price second-slide__price">24000 руб в месяц</span>
+                                            </div>
+                                        </div>
+                                        <img src="images/offers/2.png" alt="slider-image" class="slider-image">
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.section offers -->
+        <section class="section courses">
+            <div class="container">
+                <div class="courses-block">
+                    <h2 class="section-title courses-title">Выбирайте среди сотен курсов</h2>
+                    <div class="courses-wrapper">
+                        <div class="courses-buttons">
+                            <select class="select">
+                                <option>Все направления</option>
+                            </select>
+                            <button class="button-discount">Курсы со скидкой</button>
+                        </div>
+                        <div class="courses-slider">
+                            <h3 class="courses-slider__title">Длительность курса</h3>
+                            <div class="courses-slider__options">
+                                <div class="courses-slider__option">
+                                    <input type="radio" name="slider-option" id="first" checked>
+                                    <label for="first">любая</label>
+                                </div>
+                                <div class="courses-slider__option">
+                                    <input type="radio" name="slider-option" id="second">
+                                    <label for="second">2 месяца </label>
+                                </div>
+                                <div class="courses-slider__option">
+                                    <input type="radio" name="slider-option" id="third">
+                                    <label for="third">2 - 4 месяца</label>
+                                </div>
+                                <div class="courses-slider__option">
+                                    <input type="radio" name="slider-option" id="fourth">
+                                    <label for="fourth">4 - 6 месяцев</label>
+                                </div>
+                                <div class="courses-slider__option">
+                                    <input type="radio" name="slider-option" id="fifth">
+                                    <label for="fifth">> 6 месяцев</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="courses-items">
+                        <div class="courses-item">
+                            <div class="courses-item__content courses-item__content--first">
+                                <img class="courses-item__image" src="images/courses/1.png" alt="course-image">
+                            </div>
+                            <h4 class="courses-item__title">Название курса</h4>
+                        </div>
+                        <div class="courses-item">
+                            <div class="courses-item__content courses-item__content--second">
+                                <img class="courses-item__image" src="images/courses/2.png" alt="course-image">
+                            </div>
+                            <h4 class="courses-item__title">Название курса</h4>
+                        </div>
+                        <div class="courses-item">
+                            <div class="courses-item__content courses-item__content--third">
+                                <img class="courses-item__image" src="images/courses/3.png" alt="course-image">
+                            </div>
+                            <h4 class="courses-item__title">Название курса</h4>
+                        </div>
+                        <div class="courses-item">
+                            <div class="courses-item__content courses-item__content--fourth">
+                                <img class="courses-item__image" src="images/courses/4.png" alt="course-image">
+                            </div>
+                            <h4 class="courses-item__title">Название курса</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.section courses -->
+        <section class="section team">
+            <div class="container">
+                <div class="team-block">
+                    <div class="title-block">
+                        <h2 class="section-title team-title">Мы собрали для вас лучших тьюторов</h2>
+                    </div>
+                    <div class="team-tutors">
+                        <div class="tutor-card">
+                            <img class="tutor-photo" src="images/team/1.png" alt="tutor-photo">
+                            <div class="tutor-info">
+                                <span class="tutor-name">Иванов Иван</span>
+                                <span class="tutor-post">Project Manager</span>
+                                <span class="tutor-company">Yandex</span>
+                            </div>
+                        </div>
+                        <div class="tutor-card">
+                            <img class="tutor-photo" src="images/team/2.png" alt="tutor-photo">
+                            <div class="tutor-info">
+                                <span class="tutor-name">Иванов Иван</span>
+                                <span class="tutor-post">Project Manager</span>
+                                <span class="tutor-company">Yandex</span>
+                            </div>
+                        </div>
+                        <div class="tutor-card">
+                            <img class="tutor-photo" src="images/team/3.png" alt="tutor-photo">
+                            <div class="tutor-info">
+                                <span class="tutor-name">Иванов Иван</span>
+                                <span class="tutor-post">Project Manager</span>
+                                <span class="tutor-company">Yandex</span>
+                            </div>
+                        </div>
+                        <div class="tutor-card">
+                            <img class="tutor-photo" src="images/team/4.png" alt="tutor-photo">
+                            <div class="tutor-info">
+                                <span class="tutor-name">Иванов Иван</span>
+                                <span class="tutor-post">Project Manager</span>
+                                <span class="tutor-company">Yandex</span>
+                            </div>
+                        </div>
+                        <div class="tutor-card">
+                            <img class="tutor-photo" src="images/team/5.png" alt="tutor-photo">
+                            <div class="tutor-info">
+                                <span class="tutor-name">Иванов Иван</span>
+                                <span class="tutor-post">Project Manager</span>
+                                <span class="tutor-company">Yandex</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /.section team -->
+        <section class="section request">
+            <div class="container">
+                <div class="request-block">
+                    <div class="title-block">
+                        <h2 class="section-title request-title">Сделайте первый шаг к карьере мечты уже сегодня</h2>
+                    </div>
+                    <form class="form" action="#">
+                        <h3 class="form-title">Оставьте заявку и наши методисты с вами свяжутся.</h3>
+                        <div class="input-fields">
+                            <input type="text" name="fullname" id="fullname" placeholder="ФИО">
+                            <input type="text" name="phone" id="phone" placeholder="Телефон">
+                            <input type="text" name="email" id="email" placeholder="Email">
+                        </div>
+                        <input class="button submit-button" type="submit" value="Оставить заявку">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- /.main -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-block">
+                <img class="footer-logo" src="images/footer/footer-logo.png" alt="logo">
+                <div class="footer-navigation">
+                    <ul class="footer-list">
+                        <li class="list-item">Программы</li>
+                        <li class="list-item">Курсы</li>
+                        <li class="list-item">О платформе</li>
+                    </ul>
+                </div>
+                <div class="footer-contacts">
+                    <p class="footer-contacts__text">По всем вопросам обращайтесь</p>
+                    <span class="footer-contacts__email">vector@info.com</span>
+                    <span class="footer-contacts__phone">+7 (999) 999 99 99</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /.footer -->
+    <script src="js/main.js"></script>
+</body>
+</html>
