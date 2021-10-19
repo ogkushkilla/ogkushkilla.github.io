@@ -776,8 +776,8 @@ body {
     }
     .select, .button-discount {
         width: 150px;
-        height: 40px;
-        font-size: 11px;
+        height: 35px;
+        font-size: 10px;
     }
     .title-block {
         width: 355px;
