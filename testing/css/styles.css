@@ -509,7 +509,7 @@ body {
 /* RESPONSE */
 @media (max-width: 1921px) {
     .container {
-        padding: 0 350px;
+        padding: 0 100px;
     }
 }
 
