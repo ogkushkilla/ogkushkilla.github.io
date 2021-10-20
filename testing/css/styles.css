@@ -782,6 +782,10 @@ body {
         height: 35px;
         font-size: 10px;
     }
+    .select {
+        padding-left: 15px;
+        text-align: unset;
+    }
     .title-block {
         width: 355px;
     }
@@ -924,6 +928,9 @@ body {
     .select, .button-discount {
         width: 122px;
         font-size: 9px;
+    }
+    .select {
+        padding-left: 5px;
     }
     .form {
         width: 270px;
