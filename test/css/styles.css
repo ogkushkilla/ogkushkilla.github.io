@@ -416,3 +416,9 @@ body {
         height: 100%;
     }
 }
+
+@media (max-height: 700px) {
+    .navbar-links {
+        height: 48%;
+    }
+}
