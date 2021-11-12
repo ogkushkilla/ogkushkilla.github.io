@@ -407,3 +407,12 @@ body {
         height: 100%;
     }
 }
+
+@media (max-height: 768px) {
+    .navbar-links {
+        height: 50%;
+    }
+    .navbar-footer {
+        height: 100%;
+    }
+}
