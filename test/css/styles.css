@@ -229,8 +229,9 @@ body {
 }
 
 .table-placeholder {
-    display: inline-block;
+    display: inline;
     position: relative;
+    padding: 0px 6px;
     width: 20px;
     border-radius: 50%;
     text-align: center;
