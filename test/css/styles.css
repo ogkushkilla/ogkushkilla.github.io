@@ -33,6 +33,10 @@ body {
     display: none;
 }
 
+.rotate {
+    transform: rotate(180deg);
+}
+
 /* NAVBAR */
 .navbar {
     padding: 5px;
@@ -99,6 +103,7 @@ body {
 
 .header-name {
     position: relative;
+    padding: 5px 40px 5px;
     width: 300px;
 }
 
@@ -115,6 +120,7 @@ body {
 
 .header-place {
     position: relative;
+    padding: 5px 0 5px 40px;
     width: 60%;
     white-space: nowrap;
     overflow: hidden;
@@ -134,7 +140,6 @@ body {
 
 .header-name, .header-place {
     display: block;
-    padding: 5px 40px 5px;
     font-size: 12px;
     border: none;
     border-radius: 5px;
@@ -195,6 +200,10 @@ body {
 .company-selector {
     min-width: 380px;
     padding-left: 5px;
+}
+
+.selector-menu {
+    display: none;
 }
 
 .main-title {
@@ -347,6 +356,7 @@ body {
     border: none;
     background-color: transparent;
     cursor: pointer;
+    outline: none;
 }
 
 .inner-table tr td {
@@ -440,6 +450,153 @@ body {
     }
 }
 
+@media (max-width: 1280px) {
+    .main-wrapper {
+        position: relative;
+    }
+    .company-info {
+        margin-right: 10px;
+    }
+    .company-selector {
+        position: absolute;
+        height: 100%;
+        top: 0;
+        /* right: -10px; */
+        right: -375px;
+        box-shadow: 10px 10px 10px #7c7c7c;
+        transition: 0.3s all;
+    }
+    .company-selector__clicked {
+        right: -10px;
+        transition: 0.3s all;
+    }
+    .selector-menu {
+        display: block;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        width: 10px;
+        height: 100%;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        font-weight: bold;
+        background-color: rgb(34, 168, 0);
+        color: #ffffff;
+        cursor: pointer;
+    }
+    .selector-menu__rotate {
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        transform: rotate(180deg);
+    }
+}
+
+@media (max-width: 1024px) {
+    .header-mode {
+        width: 12%;
+    }
+    .header-name {
+        width: 20%;
+        padding: 5px 0 5px 40px;
+    }
+    .navbar-image {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 800px) {
+    .navbar-image {
+        width: 20px;
+        height: 20px;
+    }
+    .info-table tbody tr:nth-child(1) {
+        width: 70%;
+    }
+    .header-mode {
+        width: 18%;
+    }
+    .header-name {
+        width: 25%;
+    }
+    .header-place {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    .header {
+        margin-bottom: 5px;
+        height: auto;
+    }
+    .header-info {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .header-mode {
+        width: 35%;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .header-name {
+        width: 60%;
+    }
+    .header-place {
+        width: 85%;
+    }
+    .main-title {
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+    .company-info {
+        height: 78vh;
+    }
+    .table-block {
+        width: 800px;
+    }
+    .main-footer__wrapper {
+        align-items: center;
+    }
+    .main-button {
+        padding: 5px 15px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 375px) {
+    .header-place {
+        width: 80%;
+    }
+    .table-block {
+        width: 700px;
+    }
+    .company-selector__clicked {
+        right: -40px;
+    }
+    .selector-buttons {
+        max-width: 350px;
+        overflow: scroll;
+    }
+    .navbar-image {
+        width: 15px;
+        height: 15px;
+    }
+    .main-button {
+        padding: 5px;
+    }
+}
+
+@media (max-height: 800px) {
+    .navbar-links {
+        height: 50%;
+    }
+}
+
 @media (max-height: 768px) {
     .navbar-links {
         height: 50%;
@@ -455,5 +612,36 @@ body {
     }
     .navbar-links {
         height: 43%;
+    }
+}
+
+@media (max-height: 640px) {
+    .company-info {
+        height: 67vh;
+    }
+}
+
+@media (max-height: 600px) {
+    .company-info {
+        height: 70vh;
+    }
+    .navbar-links {
+        height: 50%;
+    }
+    .navbar-footer {
+        height: 95%;
+    }
+    .selector-button {
+        margin-bottom: 8px;
+        height: 28px;
+    }
+}
+
+@media (max-height: 480px) {
+    .navbar-links {
+        height: 37%;
+    }
+    .company-info {
+        height: 70vh;
     }
 }
