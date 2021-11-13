@@ -450,7 +450,10 @@ body {
 }
 
 @media (max-height: 700px) {
+    .company-info {
+        height: 78vh;
+    }
     .navbar-links {
-        height: 48%;
+        height: 43%;
     }
 }
