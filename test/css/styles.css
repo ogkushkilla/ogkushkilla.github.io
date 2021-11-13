@@ -218,6 +218,38 @@ body {
     border-spacing: 0;
 }
 
+.table-placeholder {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: help;
+}
+
+.table-placeholder:hover::after {
+    content: attr(data-placeholder);
+    position: absolute;
+    bottom: 10px;
+    padding: 20px 0;
+    width: 300px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    background-color: rgb(41, 41, 41);
+    color: #ffffff;
+    z-index: 99;
+}
+
+.white {
+    background-color: #acacac;
+    color: #ffffff;
+}
+
+.grey {
+    background-color: #ffffff;
+    color: #acacac;
+}
+
 .info-table tbody {
     display: flex;
 }
