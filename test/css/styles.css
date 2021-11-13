@@ -580,13 +580,15 @@ body {
 }
 
 @media (max-width: 480px) {
-    
     .main-title {
         padding-bottom: 5px;
         font-size: 20px;
     }
     .company-info {
         height: 78vh;
+    }
+    .company-selector {
+        right: -369px;
     }
     .table-block {
         width: 800px;
