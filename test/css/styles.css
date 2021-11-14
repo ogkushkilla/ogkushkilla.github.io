@@ -595,6 +595,9 @@ body {
     .table-block {
         width: 800px;
     }
+    .table-placeholder {
+        width: 17px;
+    }
     .main-footer__wrapper {
         align-items: center;
     }
