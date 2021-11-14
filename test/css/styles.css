@@ -579,6 +579,10 @@ body {
         padding: 0;
         font-size: 10px;
     }
+    .table-placeholder {
+        font-size: 12px;
+        width: 17px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -594,9 +598,6 @@ body {
     }
     .table-block {
         width: 800px;
-    }
-    .table-placeholder {
-        width: 17px;
     }
     .main-footer__wrapper {
         align-items: center;
