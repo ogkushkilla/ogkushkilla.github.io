@@ -636,6 +636,7 @@ body {
     }
     .main-button {
         padding: 5px;
+        font-size: 8px;
     }
 }
 
