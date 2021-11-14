@@ -465,7 +465,7 @@ body {
         right: -375px;
         box-shadow: 10px 10px 10px #7c7c7c;
         transition: 0.3s all;
-        overflow: hidden;
+        overflow: scroll;
     }
     .company-selector__clicked {
         right: -10px;
