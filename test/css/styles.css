@@ -586,6 +586,9 @@ body {
 }
 
 @media (max-width: 480px) {
+    .header-place {
+        width: 85%;
+    }
     .main-title {
         padding-bottom: 5px;
         font-size: 20px;
@@ -601,6 +604,8 @@ body {
     }
     .main-footer__wrapper {
         align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
     }
     .main-button {
         padding: 5px 15px;
