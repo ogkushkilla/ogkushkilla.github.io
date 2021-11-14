@@ -569,7 +569,7 @@ body {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 680px) {
     .main-button {
         padding: 5px;
         font-size: 10px;
