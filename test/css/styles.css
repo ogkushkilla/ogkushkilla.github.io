@@ -465,7 +465,6 @@ body {
         right: -375px;
         box-shadow: 10px 10px 10px #7c7c7c;
         transition: 0.3s all;
-        overflow: scroll;
     }
     .company-selector__clicked {
         right: -10px;
@@ -491,6 +490,9 @@ body {
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
         transform: rotate(180deg);
+    }
+    .selector-buttons {
+        overflow: scroll;
     }
 }
 
