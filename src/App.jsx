@@ -1,20 +1,20 @@
+import { Provider } from 'react-redux'
+import { Catalog } from './components/Catalog/Catalog'
 import { Header } from './components/Header/Header'
-import { Container } from './components/Container/Container'
 import { Navigation } from './components/Nevigation/Navigation'
+import { store } from './store'
 
 export const App = () => {
   return (
-    <>
+    <Provider store={store}>
       <Header />
 
       <main>
-        <Navigation>
-          <Container className="navigation__container" />
-        </Navigation>
-        <section></section>
+        <Navigation />
+        <Catalog />
       </main>
 
       <footer></footer>
-    </>
+    </Provider>
   )
 }
