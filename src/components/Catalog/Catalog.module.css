@@ -15,6 +15,10 @@
   gap: 10px;
 }
 
+.empty_list {
+  font-size: 18px;
+}
+
 @media (min-width: 1024px) {
   .catalog {
     margin-bottom: 100px;
